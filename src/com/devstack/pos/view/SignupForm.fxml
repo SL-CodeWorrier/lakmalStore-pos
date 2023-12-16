@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="401.0" prefWidth="359.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.SignupFormController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="401.0" prefWidth="359.0" style="-fx-background-color: white;">
+         <children>
+            <Text layoutX="128.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LakmalGrocery" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <JFXTextField labelFloat="true" layoutX="14.0" layoutY="74.0" prefHeight="29.0" prefWidth="330.0" promptText="email">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField labelFloat="true" layoutX="14.0" layoutY="142.0" prefHeight="29.0" prefWidth="330.0" promptText="Password">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="14.0" layoutY="201.0" prefHeight="44.0" prefWidth="330.0" style="-fx-background-color: #2980b9;" text="Register Now" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="14.0" layoutY="303.0" prefHeight="44.0" prefWidth="330.0" style="-fx-background-color: #2c3e50;" text="already have an account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Text fill="#091039" layoutX="170.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" textAlignment="CENTER">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
