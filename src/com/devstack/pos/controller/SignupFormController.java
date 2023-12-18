@@ -23,6 +23,7 @@ public class SignupFormController {
     }
 
     public void btnRegisterNowOnAction(ActionEvent actionEvent) {
+
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/lakmalStore",
