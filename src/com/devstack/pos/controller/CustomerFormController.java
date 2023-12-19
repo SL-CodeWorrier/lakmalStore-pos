@@ -2,6 +2,7 @@ package com.devstack.pos.controller;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
+import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -23,4 +24,7 @@ public class CustomerFormController {
     public TableColumn colContact;
     public TableColumn colSalary;
     public TableColumn colOperate;
+
+    public void btnSaveUpdateOnAction(ActionEvent actionEvent) {
+    }
 }
