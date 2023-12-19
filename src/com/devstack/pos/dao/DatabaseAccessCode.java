@@ -52,7 +52,7 @@ public class DatabaseAccessCode {
         String sql = "INSERT INTO customer VALUES (?,?,?,?)";
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         preparedStatement.setString(1, email);
-        preparedStatement.setString(2, name));
+        preparedStatement.setString(2, name);
         preparedStatement.setString(3, contact);
         preparedStatement.setDouble(4, salary);
         return preparedStatement.executeUpdate()>0;
