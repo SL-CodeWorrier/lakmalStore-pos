@@ -12,7 +12,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="524.0" prefWidth="996.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.ProductMainPageController">
    <children>
       <Label layoutX="24.0" layoutY="24.0" text="Product Management" textFill="#430404">
@@ -21,29 +20,29 @@
          </font>
       </Label>
       <Separator layoutX="24.0" layoutY="56.0" prefHeight="0.0" prefWidth="963.0" />
-      <JFXButton layoutX="893.0" layoutY="21.0" onAction="#btnBackToHomeOnAction" style="-fx-background-color: #7f8c8d;" text="Back to home" textFill="WHITE">
+      <JFXButton layoutX="893.0" layoutY="21.0" style="-fx-background-color: #7f8c8d;" text="Back to home" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
       <AnchorPane layoutX="24.0" layoutY="71.0" prefHeight="447.0" prefWidth="451.0" style="-fx-background-color: #bdc3c7;">
          <children>
-            <JFXButton layoutX="331.0" layoutY="14.0" onAction="#btnNewCustomerOnAction" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #2980b9;" text="+ New Product" textFill="WHITE">
+            <JFXButton layoutX="331.0" layoutY="14.0" onAction="#btnAddNewOnAction" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #2980b9;" text="+ New Product" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXTextField labelFloat="true" layoutX="14.0" layoutY="14.0" promptText="Product Code">
+            <JFXTextField fx:id="txtProductCode" labelFloat="true" layoutX="14.0" layoutY="14.0" promptText="Product Code">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXTextField>
-            <TextArea layoutX="14.0" layoutY="55.0" prefHeight="106.0" prefWidth="424.0" promptText="Description">
+            <TextArea fx:id="txtProductDescription" layoutX="14.0" layoutY="55.0" prefHeight="106.0" prefWidth="424.0" promptText="Description">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </TextArea>
-            <JFXButton layoutX="322.0" layoutY="170.0" onAction="#btnNewCustomerOnAction" prefHeight="29.0" prefWidth="115.0" style="-fx-background-color: #2980b9;" text="Save Product" textFill="WHITE">
+            <JFXButton fx:id="btnSaveUpdate" layoutX="322.0" layoutY="170.0" onAction="#btnNewProductOnAction" prefHeight="29.0" prefWidth="115.0" style="-fx-background-color: #2980b9;" text="Save Product" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -80,7 +79,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </TextArea>
-      <JFXButton layoutX="867.0" layoutY="71.0" onAction="#btnNewCustomerOnAction" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #2980b9;" text="+ New Batch" textFill="WHITE">
+      <JFXButton layoutX="867.0" layoutY="71.0" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #2980b9;" text="+ New Batch" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
