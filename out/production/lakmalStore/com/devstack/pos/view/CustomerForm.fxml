@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableColumn?>
@@ -19,9 +20,21 @@
          </font>
       </Label>
       <Separator layoutX="14.0" layoutY="46.0" prefHeight="0.0" prefWidth="575.0" />
-      <JFXButton layoutX="229.0" layoutY="11.0" style="-fx-background-color: #7f8c8d;" text="Back to home" textFill="WHITE" />
-      <JFXButton layoutX="331.0" layoutY="11.0" style="-fx-background-color: #16a085;" text="Manage Loyalty Cards" textFill="WHITE" />
-      <JFXButton layoutX="480.0" layoutY="11.0" style="-fx-background-color: #2980b9;" text="+ New Customer" textFill="WHITE" />
+      <JFXButton layoutX="229.0" layoutY="11.0" onAction="#btnBackToHomeOnAction" style="-fx-background-color: #7f8c8d;" text="Back to home" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="331.0" layoutY="11.0" style="-fx-background-color: #16a085;" text="Manage Loyalty Cards" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="480.0" layoutY="11.0" onAction="#btnNewCustomerOnAction" style="-fx-background-color: #2980b9;" text="+ New Customer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
       <JFXTextField fx:id="txtEmail" labelFloat="true" layoutX="14.0" layoutY="64.0" prefHeight="29.0" prefWidth="172.0" promptText="email">
          <font>
             <Font name="System Bold" size="13.0" />
@@ -46,6 +59,9 @@
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
       <TextField fx:id="txtSearch" layoutX="14.0" layoutY="168.0" prefHeight="25.0" prefWidth="575.0" promptText="search here" />
       <TableView fx:id="tbl" layoutX="14.0" layoutY="208.0" prefHeight="182.0" prefWidth="575.0">
@@ -59,4 +75,7 @@
         </columns>
       </TableView>
    </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
 </AnchorPane>
