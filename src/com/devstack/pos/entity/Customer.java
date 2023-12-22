@@ -6,7 +6,7 @@ public class Customer {
     private String contact;
     private String salary;
 
-    public Customer() {
+    public Customer(String string, String resultSetString, String setString, double aDouble) {
     }
 
     public Customer(String email, String name, String contact, String salary) {
@@ -40,7 +40,7 @@ public class Customer {
         this.contact = contact;
     }
 
-    public String getSalary() {
+    public double getSalary() {
         return salary;
     }
 

@@ -5,7 +5,7 @@ public class Product {
     private int code;
     private int description;
 
-    public Product() {
+    public Product(int anInt, String string) {
     }
 
     public Product(int code, int description) {
@@ -21,7 +21,7 @@ public class Product {
         this.code = code;
     }
 
-    public int getDescription() {
+    public String getDescription() {
         return description;
     }
 
