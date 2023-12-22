@@ -1,15 +1,15 @@
-package com.devstack.pos.dto;
+package com.devstack.pos.entity;
 
-public class CustomerDto {
+public class Customer {
     private String email;
     private String name;
     private String contact;
-    private double salary;
+    private String salary;
 
-    public CustomerDto() {
+    public Customer() {
     }
 
-    public CustomerDto(String email, String name, String contact, double salary) {
+    public Customer(String email, String name, String contact, String salary) {
         this.email = email;
         this.name = name;
         this.contact = contact;
@@ -40,11 +40,21 @@ public class CustomerDto {
         this.contact = contact;
     }
 
-    public double getSalary() {
+    public String getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(String salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "email='" + email + '\'' +
+                ", name='" + name + '\'' +
+                ", contact='" + contact + '\'' +
+                ", salary='" + salary + '\'' +
+                '}';
     }
 }

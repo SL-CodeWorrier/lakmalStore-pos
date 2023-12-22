@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane fx:id="context" prefHeight="297.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.DashboardFormController">
    <children>
@@ -19,26 +19,41 @@
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
       <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="208.0" layoutY="63.0" onAction="#btnProductOnAction" prefHeight="98.0" prefWidth="185.0" style="-fx-background-color: #d35400;" text="Product Management" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
       <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="403.0" layoutY="63.0" onAction="#btnPlaceOrderOnAction" prefHeight="98.0" prefWidth="185.0" style="-fx-background-color: #2980b9;" text="Place Order" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
       <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="12.0" layoutY="177.0" onAction="#btnOrderDetailsOnAction" prefHeight="98.0" prefWidth="282.0" style="-fx-background-color: #8e44ad;" text="Order Details" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
       <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="304.0" layoutY="177.0" onAction="#btnIncomeReportOnAction" prefHeight="98.0" prefWidth="282.0" style="-fx-background-color: #c0392b;" text="Income Report" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
    </children>
 </AnchorPane>
