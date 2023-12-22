@@ -11,32 +11,7 @@ import java.util.List;
 
 public class DatabaseAccessCode {
 
-    //==========User Management==============
 
-    public static boolean createUser(String email, String password) throws ClassNotFoundException, SQLException {
-        String sql = "INSERT INTO user VALUES (?,?)";
-        PreparedStatement preparedStatement = DbConnection.getInstance().getConnection().prepareStatement(sql);
-        preparedStatement.setString(1, email);
-        preparedStatement.setString(2, PasswordManager.encryptPassword(password));
-        return preparedStatement.executeUpdate()>0;
-    }
-
-    public static UserDto findUser(String email) throws ClassNotFoundException, SQLException {
-        String sql = "SELECT * FROM user WHERE email=?";
-        PreparedStatement preparedStatement = DbConnection.getInstance().getConnection().prepareStatement(sql);
-        preparedStatement.setString(1, email);
-
-        ResultSet set = preparedStatement.executeQuery();
-        if(set.next()){
-            return new UserDto(
-                    set.getString(1),
-                    set.getString(2)
-            );
-        }
-        return null;
-    }
-
-    //==========User Management==============
 
     //==========Customer Management==============
     public static boolean createCustomer(String email, String name, String contact, double salary) throws ClassNotFoundException, SQLException {
